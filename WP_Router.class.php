@@ -216,7 +216,7 @@ class WP_Router extends WP_Router_Utility {
 	 * @param WP|WP_Query $query
 	 * @return string|NULL
 	 */
-	protected function identify_route( $query ) {
+	public function identify_route( $query ) {
 		if ( !isset($query->query_vars[self::QUERY_VAR]) ) {
 			return NULL;
 		}
